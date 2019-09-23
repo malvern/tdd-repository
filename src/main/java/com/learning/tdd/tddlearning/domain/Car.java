@@ -13,9 +13,6 @@ public class Car {
     private String name;
     private String type;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private Set<Person> person;
-
     public Car() {
     }
 
@@ -48,11 +45,5 @@ public class Car {
         this.type = type;
     }
 
-    public Set<Person> getPerson() {
-        return person;
-    }
 
-    public void setPerson(Set<Person> person) {
-        this.person = person;
-    }
 }
