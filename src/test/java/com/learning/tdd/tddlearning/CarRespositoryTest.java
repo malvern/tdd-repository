@@ -24,8 +24,8 @@ public class CarRespositoryTest {
 
     @Test
     public void getCar_returnsCarDetails(){
-        Car savedCar = entityManager.persistFlushFind(new Car("benz","mercedes"));
-        Car car = carRepository.findByName("benz");
+        Car savedCar = entityManager.persistFlushFind(new Car("bmw","7 series"));
+        Car car = carRepository.findByName("bmw");
         assertThat(car.getName()).isEqualTo(savedCar.getName());
     }
 }
